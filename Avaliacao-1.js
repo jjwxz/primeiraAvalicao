@@ -67,3 +67,22 @@ function calcularDiasDeVida (idadeEmVida) {
 }
 
 console.log(`Uma pessoa de 30 anos viveu aproximadamente ${calcularDiasDeVida(30)} dias.`);
+
+// 6. verificador de aprovação escolar
+
+const n1 = 7;
+const n2 = 6;
+const n3 = 8;     
+const n4 = 10;
+
+let frequencia = 80; // porcentagem da frequencia
+
+let media = (n1 + n2 + n3 + n3) / 4;
+
+// só é aprovado se tiver >= 85 de frequencia e(&&) media >= 6
+
+if (frequencia >= 75 && media >= 6) {
+    console.log(`Aprovado com média: ${media}`);
+} else {
+    console.log(`Reprovado com média: ${media}`);
+};
