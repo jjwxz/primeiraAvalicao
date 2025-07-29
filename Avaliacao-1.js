@@ -35,3 +35,17 @@ switch (categoria) {
 }
 
 console.log(`Quantidade de pontos: ${qtdPontos}`);
+
+// 3. sequencia de fibonacci
+
+function fibonacci(n) {
+    let fib = [];
+    for (let i = 0; i < n; i++) {
+        if (i === 0) fib[i] = 0;
+        else if (i === 1) fib[i] = 1;
+        else fib[i] = fib[i - 1] + fib[i - 2];
+    }
+    return fib;
+}
+
+console.log(fibonacci(10));
