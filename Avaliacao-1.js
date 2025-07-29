@@ -49,3 +49,12 @@ function fibonacci(n) {
 }
 
 console.log(fibonacci(10));
+
+// 4. simulador de bateria
+
+let nivelBateria = 100;
+
+while (nivelBateria > 0) {
+    console.log(`Nível da bateria: ${nivelBateria}%`);
+    nivelBateria -= 10;
+}
