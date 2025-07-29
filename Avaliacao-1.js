@@ -86,3 +86,16 @@ if (frequencia >= 75 && media >= 6) {
 } else {
     console.log(`Reprovado com média: ${media}`);
 };
+
+// 7. Maior número da lista
+
+let numeros = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34];
+let maiorNumero = numeros[0];
+
+for (let i = 1; i < numeros.length; i++) {
+    if (numeros[i] > maiorNumero) {
+        maiorNumero = numeros[i];
+    }
+}
+
+console.log(`O maior número da lista é: ${maiorNumero}`);
