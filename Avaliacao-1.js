@@ -58,3 +58,12 @@ while (nivelBateria > 0) {
     console.log(`Nível da bateria: ${nivelBateria}%`);
     nivelBateria -= 10;
 }
+
+// 5. função para calcular dias de vida
+
+function calcularDiasDeVida (idadeEmVida) {
+    const diasAno = 365;
+    return idadeEmVida * diasAno;
+}
+
+console.log(`Uma pessoa de 30 anos viveu aproximadamente ${calcularDiasDeVida(30)} dias.`);
